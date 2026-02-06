@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إلى أميرتي 🎀</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4ece1; /* Matches the parchment tone */
+            font-family: 'Amiri', serif;
+            overflow: hidden; /* Prevents scrolling */
+        }
+
+        .parchment {
+            width: 100%;
+            height: 100vh;
+            /* Important: Make sure your image is named background.jpg in the repo */
+            background-image: url('background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .poem-container {
+            width: 80%;
+            max-width: 600px;
+            /* Padding to ensure text stays inside the decorative border */
+            padding: 20px; 
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .verse {
+            display: flex;
+            justify-content: space-between; /* Pushes Sadr to right, Ajuz to left */
+            font-size: 1.6rem; /* Large, readable text */
+            color: #4a3b2a; /* Dark brown ink color */
+            font-weight: bold;
+            line-height: 1.6;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.5); /* Slight highlight to make text pop */
+        }
+
+        .sadr {
+            text-align: right;
+            padding-left: 15px;
+        }
+
+        .ajuz {
+            text-align: left;
+            padding-right: 15px;
+        }
+
+        /* Mobile adjustment */
+        @media (max-width: 600px) {
+            .verse {
+                font-size: 1.1rem;
+                flex-direction: column;
+                text-align: center;
+                gap: 5px;
+                margin-bottom: 15px;
+            }
+            .sadr, .ajuz {
+                text-align: center;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parchment">
+        <div class="poem-container">
+            <div class="verse">
+                <span class="sadr">وإن مسّها ضيقٌ فصدري ملاذُها</span>
+                <span class="ajuz">وإن مسّني همٌّ فبذكرُها يذهبُ</span>
+            </div>
+            <div class="verse">
+                <span class="sadr">فيا نورَ أيّامي ويا تاجَ بهجتي</span>
+                <span class="ajuz">لأجلكِ هذا القلبُ لا يتغرّبُ</span>
+            </div>
+            <div class="verse">
+                <span class="sadr">ويا درةً ما ضاعَ مثلكِ ذكرُها</span>
+                <span class="ajuz">ولا هدأت أشواقُها حين تغضَبُ</span>
+            </div>
+            <div class="verse">
+                <span class="sadr">وإن كان طبعٌ منكِ يومًا صِبا</span>
+                <span class="ajuz">فإني بصدرٍ رحبِ عفوٍ أرحّبُ</span>
+            </div>
+            <div class="verse">
+                <span class="sadr">وما فوق همّكِ همٌّ عندي مكانُهُ</span>
+                <span class="ajuz">سوى ذِكرِ يومٍ نحوهُ الكلُّ يذهَبُ</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
